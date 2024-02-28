@@ -208,6 +208,7 @@ MonoBehaviour:
   speed: 5
   rotationSpeed: 3
   swimLimits: {x: 50, y: 10, z: 50}
+  manager: {fileID: 1771969544}
 --- !u!1001 &140484765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1187,6 +1188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1771969543}
+  - component: {fileID: 1771969544}
   m_Layer: 0
   m_Name: Dolphin Manager
   m_TagString: Untagged
@@ -1209,6 +1211,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1771969544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771969542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684205aee704caa499be3f9c82798619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dolphinPrefab: {fileID: 66580426}
+  numDolphins: 7
+  swimLimits: {x: 100, y: 50, z: 100}
+  minSpeed: 4
+  maxSpeed: 8
+  rotationSpeed: 4
 --- !u!1 &2063343113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1005335091568968, guid: a61d0b4c41dabf548be1eb07e22d847a, type: 3}

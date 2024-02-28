@@ -7,6 +7,7 @@ public class Dolphin : MonoBehaviour
     public Vector3 swimLimits = new Vector3(100, 50, 100);
     private Vector3? targetPosition = null;
     private Animator animator;
+    public DolphinManager manager;
 
     void Start()
     {
