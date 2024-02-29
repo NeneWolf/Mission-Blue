@@ -54,6 +54,13 @@ namespace Convai.Scripts.Utils
         {
             // Update the response text in the UI.
             responseText.text = _responseString;
+
+            
+        }
+
+        public void TriggerChatKnowledge(string animalName)
+        {
+           SendTextDataWithPreText("Tell me about " + animalName);
         }
 
         /// <summary>
@@ -125,6 +132,65 @@ namespace Convai.Scripts.Utils
                 await _call.RequestStream.WriteAsync(getResponseConfigRequest);
 
                 string userText = userInput.text;
+                await _call.RequestStream.WriteAsync(new GetResponseRequest
+                {
+                    GetResponseData = new GetResponseData
+                    {
+                        TextData = userText
+                    }
+                });
+
+                if (string.IsNullOrEmpty(userText))
+                    Logger.DebugLog("Player connected/initialised", Logger.LogCategory.Character);
+
+                await _call.RequestStream.CompleteAsync();
+                await ReceiveResultFromServer(_call);
+            }
+            catch (RpcException rpcException)
+            {
+                if (rpcException.StatusCode == StatusCode.Cancelled)
+                    Logger.Exception(rpcException, Logger.LogCategory.Character);
+                else
+                    throw;
+            }
+            catch (Exception ex)
+            {
+                Logger.Exception(ex, Logger.LogCategory.Character);
+            }
+        }
+
+
+        private async void SendTextDataWithPreText(string message)
+        {
+            _responseString = "";
+
+            if (_client == null)
+            {
+                Logger.Error("gRPC client is not initialized.", Logger.LogCategory.Character);
+                return;
+            }
+
+            _call = _client.GetResponse();
+
+            GetResponseRequest getResponseConfigRequest = new()
+            {
+                GetResponseConfig = new GetResponseConfig
+                {
+                    CharacterId = characterID,
+                    ApiKey = APIKey,
+                    SessionId = sessionID,
+                    AudioConfig = new AudioConfig
+                    {
+                        DisableAudio = true
+                    }
+                }
+            };
+
+            try
+            {
+                await _call.RequestStream.WriteAsync(getResponseConfigRequest);
+
+                string userText = message;
                 await _call.RequestStream.WriteAsync(new GetResponseRequest
                 {
                     GetResponseData = new GetResponseData
