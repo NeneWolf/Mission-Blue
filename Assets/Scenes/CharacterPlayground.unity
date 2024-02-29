@@ -1236,7 +1236,7 @@ GameObject:
   - component: {fileID: 405084715}
   - component: {fileID: 405084714}
   m_Layer: 20
-  m_Name: Cube (1)
+  m_Name: White Shark
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5504,7 +5504,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Goldfish, fascinating creatures with a history dating back centuries, are
+    known for their vibrant colors and graceful movements in aquatic environments.
+    Their unique characteristics, from their ability to adapt to various conditions
+    to their social behaviors, make them a beloved species in the world of aquatics.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5531,7 +5534,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 25.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5615,6 +5618,10 @@ PrefabInstance:
     - target: {fileID: 1936816509490896, guid: 04c1fd6f4d1402f43a3283633875dc8c, type: 3}
       propertyPath: m_Name
       value: Inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936816509490896, guid: 04c1fd6f4d1402f43a3283633875dc8c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224270244420047518, guid: 04c1fd6f4d1402f43a3283633875dc8c, type: 3}
       propertyPath: m_LocalScale.x
@@ -10199,7 +10206,7 @@ GameObject:
   - component: {fileID: 2109304515}
   - component: {fileID: 2109304520}
   m_Layer: 20
-  m_Name: Cube
+  m_Name: Gold Fish
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11284,7 +11291,19 @@ MonoBehaviour:
       m_Calls: []
   OnSetTarget:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8937393099985303385}
+        m_TargetAssemblyTypeName: CollectAnimalInformation, Assembly-CSharp
+        m_MethodName: OnAimTargetChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnClearTarget:
     m_PersistentCalls:
       m_Calls: []
@@ -11296,7 +11315,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 0
     Variable: {fileID: 0}
-  EditorTab1: 1
+  EditorTab1: 2
 --- !u!4 &450554242387704192
 Transform:
   m_ObjectHideFlags: 0
@@ -23503,7 +23522,7 @@ MonoBehaviour:
       OnInputFloat:
         m_PersistentCalls:
           m_Calls: []
-    selectedIndex: 12
+    selectedIndex: 8
   - name:
       UseConstant: 1
       ConstantValue: Weapons External
