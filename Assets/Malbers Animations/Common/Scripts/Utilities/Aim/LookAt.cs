@@ -82,7 +82,7 @@ namespace MalbersAnimations.Utilities
                 if (check != isAiming)
                 {
                     isAiming = check;
-                    OnLookAtActive.Invoke(isAiming);
+                    //OnLookAtActive.Invoke(isAiming);
 
                     if (!isAiming)
                     {

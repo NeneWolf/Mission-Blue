@@ -88,7 +88,7 @@ MonoBehaviour:
   MovementStrafe: 1
   IdleStrafe: 1
   m_debug: 0
-  Editor_Tabs1: 1
+  Editor_Tabs1: 4
   SpeedSets:
   - name: Swim
     StartVerticalIndex:
@@ -134,6 +134,10 @@ MonoBehaviour:
     BankLerp:
       UseConstant: 1
       ConstantValue: 10
+      Variable: {fileID: 0}
+    UpDownMult:
+      UseConstant: 1
+      ConstantValue: 1
       Variable: {fileID: 0}
     states:
     - {fileID: 11400000, guid: 7e364e53b77644c47aa3abdaa2e2c08c, type: 2}

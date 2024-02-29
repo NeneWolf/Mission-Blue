@@ -42,7 +42,7 @@ MonoBehaviour:
     AdditivePosition: 1
     AdditiveRotation: 1
     Persistent: 0
-    IgnoreLowerStates: 0
+    IgnoreLowerStates: 1
     LockMovement: 0
     LockInput: 0
   GeneralMessage: []
@@ -105,6 +105,6 @@ MonoBehaviour:
   MovementStrafe: 0
   IdleStrafe: 0
   m_debug: 1
-  Editor_Tabs1: 1
+  Editor_Tabs1: 2
   SpeedSets: []
   ID: {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
