@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4923121936322635828}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1937226662293230082}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint3_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9045343391232682452}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BodyFinSide2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4145137267641389118}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Jaw_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3327630305580339793}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint5_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,9 +173,10 @@ GameObject:
   - component: {fileID: 3423976202264560754}
   - component: {fileID: 8570947904131906799}
   - component: {fileID: 3665981557961392567}
-  m_Layer: 0
+  - component: {fileID: 5978726854719968627}
+  m_Layer: 20
   m_Name: Orca
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,6 +339,35 @@ MonoBehaviour:
   speed: 5
   rotationSpeed: 2
   swimLimits: {x: 50, y: 10, z: 50}
+--- !u!114 &5978726854719968627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475276996816571533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e517918905ee9464c8aeae69027a834b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aimAssist: 0
+  m_AimCenter: {fileID: 7008443483860169729}
+  UseOnTriggerEnter: 0
+  layer:
+    UseConstant: 1
+    ConstantValue:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    Variable: {fileID: 0}
+  Tags: []
+  OnAimEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAimExit:
+    m_PersistentCalls:
+      m_Calls: []
+  debug: 0
 --- !u!1 &2667716306907447251
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6996892941991751970}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6947218897075867358}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint7_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8057305886041111897}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: HeadEnd_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3396307724945563868}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5542342432639647108}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1433541684578565069}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: DeformationSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3490034488210080307}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BackC_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6320393437929530797}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5852155168445144957}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BackF_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3896998883257086088}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6424204986164975172}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BodyFinSide4_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -696,7 +726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6742228985158557861}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BodyFinSide2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2522769005839388716}
   - component: {fileID: 1379718685832625195}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: orca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -842,7 +872,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 303238375232917384}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BodyFinSide1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -874,7 +904,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1463971784714513011}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BodyFinSide3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -906,7 +936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6205704708240311278}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BodyFinSide1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,7 +968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5889872984825202988}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BackE_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -970,7 +1000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8558665212140787243}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BackA_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7716626702226632734}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BackB_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1035,7 +1065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9116808749036756634}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint6_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1097,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3525841948210151441}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Root_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1102,7 +1132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6415404573274179169}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6728972145566720623}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: joint4_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1166,7 +1196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7766526331897388935}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Head_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1199,7 +1229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4412095800101382671}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BackD_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1231,7 +1261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7325106301236265846}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BodyFinSide3_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1263,7 +1293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8670641548126871512}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: JawEnd_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1294,7 +1324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7308920254868567827}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BodyFinSide4_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}

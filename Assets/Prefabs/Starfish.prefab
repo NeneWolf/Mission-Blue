@@ -6383,7 +6383,6 @@ GameObject:
   - component: {fileID: 5132875431031915848}
   - component: {fileID: 73828188247453449}
   - component: {fileID: 927721062224473906}
-  - component: {fileID: 4606743102077914786}
   - component: {fileID: 7571294594191816318}
   m_Layer: 0
   m_Name: Starfish
@@ -6456,59 +6455,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4606743102077914786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4263667299399387683}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36003be02bd7fc54db18675085e2ab6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idleStates:
-  - stateName: Idle
-    animationBool: isIdle
-    minStateTime: 1
-    maxStateTime: 1
-    stateWeight: 1
-  movementStates:
-  - stateName: Idle
-    animationBool: isIdle
-    maxStateTime: 2
-    moveSpeed: 0.1
-    turnSpeed: 1
-  attackingStates: []
-  deathStates: []
-  species: StarFish
-  stats: {fileID: 11400000, guid: 9a29535241efed3499d962d584f5db75, type: 2}
-  wanderZone: 10
-  awareness: 30
-  scent: 30
-  constainedToWanderZone: 0
-  nonAgressiveTowards: []
-  matchSurfaceRotation: 0
-  surfaceRotationSpeed: 2
-  logChanges: 0
-  showGizmos: 0
-  drawWanderRange: 1
-  drawScentRange: 1
-  drawAwarenessRange: 1
-  deathEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  attackingEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  idleEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  movementEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  CurrentState: 0
 --- !u!195 &7571294594191816318
 NavMeshAgent:
   m_ObjectHideFlags: 0
